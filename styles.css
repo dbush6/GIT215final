@@ -1,0 +1,351 @@
+:root{
+    --tan: #fff3e3;
+    --green: #485359;
+    --red: #9f2529;
+    --black: #000000;
+    --white: #FFFFFF;
+
+    --fonts: "Ubuntu", arial, sans-serif;
+
+    --box-shadow-lg: -5px 5px 5px var(--black);
+    --box-shadow-sm: -3px 3px 3px var(--black);
+}
+
+body{
+    background-color: var(--green);
+    background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");  
+    max-width: 1280px;
+}
+
+header{
+    background-color: var(--tan);
+    color: var(--green);
+    font-family: var(--fonts);
+    align-items: center;
+}
+
+header a{
+    color: var(--green);
+    display: block;
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    font-size: 50pt;
+    max-width: 100%;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+
+}
+
+header img{
+    max-width: 100%;
+}
+
+h2{
+    background-color: var(--green);
+    color: var(--tan);
+    font-family: var(--fonts);
+    background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
+}
+
+nav{
+    margin: 0 15rem 0 15rem;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr .5fr;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 1rem;
+}
+
+nav li{
+    box-shadow: var(--box-shadow-lg);
+    text-decoration: none;
+}
+
+nav li:hover{
+    box-shadow: var(--box-shadow-sm);
+}
+
+nav a{
+    text-decoration: none;
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+main{
+    text-align: center;
+    font-family: var(--fonts);
+}
+
+main a{
+    background-color: var(--red);
+    color: var(--tan);
+    box-shadow: var(--box-shadow-lg);
+    width: 100px;
+    display: block;
+    padding: 1rem;
+    margin: 1rem auto;
+    text-decoration: none;
+}
+
+main a:hover{
+    box-shadow: var(--box-shadow-sm);
+}
+
+main img{
+    max-width: 100%;
+    height: auto;
+}
+
+main h2{
+    color: var(--tan);
+}
+
+main h3{
+    color: var(--green);
+    font-size: 1.5rem;
+}
+
+#menu h3{
+    color: var(--tan);
+    padding-top: 50px;
+    font-style: italic;
+    font-size: x-large;
+}
+
+main p{
+    color: var(--tan);
+}
+
+#menu section{
+    background-color: var(--tan);
+    color: var(--tan);
+}
+
+#menu > section p{
+    color: var(--green);
+}
+
+.localchef{
+    display: flex;
+    background-color: var(--tan);
+    color: var(--green);
+    padding: 50px 0 25px;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+}
+
+#local img{
+    max-width: 100%;
+    filter: grayscale(90%);
+    transition: filter 1s;
+}
+
+#local img:hover{
+    filter: grayscale(0%)
+}
+
+#local p{
+    color: var(--green);
+    font-size: small;
+    margin: 0 20px 20px 0px;
+}
+
+#chef section div{
+    background-color: var(--red);
+    color: var(--tan);
+}
+
+#chef p{
+    color: var(--green);
+    font-size: small;
+    margin: 0 50px 20px 0px;
+}
+
+#chef img{
+    filter: grayscale(90%);
+    transition: 1s;
+    max-width: 100%;
+}
+
+#chef img:hover{
+    filter: grayscale(0%)
+}
+
+#contact h2{
+    padding-top: 20px;
+}
+
+#contact p{
+    position: relative;
+    bottom: 10px;
+}
+
+.btt{
+    font-size: .75rem;
+    font-family: var(--fonts);
+    box-shadow: var(--box-shadow-lg);
+    text-decoration: none;
+    padding: .5rem;
+}
+    
+.btt:hover{
+    box-shadow: var(--box-shadow-sm);
+}
+
+footer{
+    color: var(--white);
+    text-align: center;
+    border-width: 3px;
+}
+
+footer p{
+    font-size: x-small;
+}
+
+.form{
+    align-items: center;
+    margin: 10px auto;
+	padding: 10px;
+    display: flex;
+    gap: 100px;
+    position: relative;
+}
+
+.form img{
+    width: 500px;
+    height: 500px;
+    padding-left: 65px;
+}
+
+.form p{
+    float: right;
+    font-size: small;
+    position: relative;
+}
+
+input{
+    padding: .5rem;
+}
+
+select{
+	appearance: none;
+	height: 40px;
+	font-style: normal;
+	font-weight: normal;
+	color: var(--tan);
+}
+
+input, label, select, textarea{
+    display: block;
+    font-size: 1rem;
+    color: var(--black);
+    width: 100%;
+    align-items: center;
+}
+
+.required{
+    color: var(--tan);
+}
+
+label{
+    margin: 1rem 0 0.5rem 0;
+    text-align: left;
+    color: var(--tan);
+}
+
+fieldset{
+	margin: 20px;
+	border-radius: 0px;
+	border-color: var(--white);
+    color: var(--tan);
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 5px;
+}
+
+#state::after{
+	display: block;
+	content: "\25bc";
+	width: 0px;
+	height: 0px;
+	color: var(--green);
+	position: relative;
+	top: -1.8rem;
+	left: 16rem;
+}
+
+#my-submit{
+    grid-column: 1/-1;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: var(--red);
+    color: var(--tan);
+    font-size: 1rem;
+    border: none;
+    justify-self: end;
+    box-shadow: var(--box-shadow-lg);
+    align-items: center;
+    width: 100px;   
+}
+
+#my-submit:hover{
+    box-shadow: var(--box-shadow-sm);
+}
+
+input[type="radio"] + label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 20pt;
+}
+
+input[type="radio"] + label::before {
+    content: "\00a0";
+    font-size: 2em;
+    line-height: 1;
+    border-radius: 1%;
+    display: inline-block;  
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin-right: 70px;
+    border: 2px solid var(--white);
+    background-color: var(--white);
+}
+
+input[type="radio"]:checked + label::before {
+    color: var(--white);
+    background: var(--red);
+}
+
+input[type="radio"]:focus{
+    outline: none;
+}
+
+input:invalid, select:invalid, textarea:invalid{
+	border: 4px solid var(--red);
+}
+
+input:focus, select:focus, textarea:focus{
+	outline: 1px solid var(--black);	
+}
+
